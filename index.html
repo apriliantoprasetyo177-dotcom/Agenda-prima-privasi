@@ -33,33 +33,36 @@
   <header>
     <div class="app">Agenda Prima</div>
     <h1>Kebijakan Privasi</h1>
-    <p class="meta">Berlaku sejak: 26 Oktober 2026 &nbsp;·&nbsp; Pengembang: PPM &nbsp;·&nbsp; Kontak: <a href="mailto:prajagautamainformatika@gmail.com">prajagautamainformatika@gmail.com</a></p>
+    <p class="meta">Berlaku sejak: 27 Oktober 2026 &nbsp;·&nbsp; Pengembang: PPM &nbsp;·&nbsp; Kontak: <a href="mailto:prajagautamainformatika@gmail.com">prajagautamainformatika@gmail.com</a></p>
   </header>
 
   <section class="card summary">
     <strong>Ringkasnya</strong>
     <ul>
       <li>Agenda, daftar tamu, dan pengaturan Anda hanya tersimpan di HP Anda.</li>
-      <li>Tidak ada akun, iklan, pelacak, atau analitik.</li>
-      <li>Foto, PDF, suara, dan teks hanya dikirim ke Google Gemini bila Anda sendiri memakai fitur Scan, Analisis, atau Rekam suara, memakai kunci milik Anda.</li>
+      <li>Tidak ada akun, iklan, pelacak, atau analitik. Pengembang tidak punya server.</li>
+      <li>Foto, PDF, suara, dan teks hanya dikirim ke Google Gemini bila Anda sendiri memakai fitur Scan, Analisis, atau Rekam suara, memakai kunci milik Anda. Satu permintaan uji kecil juga dikirim saat Anda mengetuk Uji &amp; Simpan pada kunci.</li>
       <li>Pada layanan gratis Google, isi yang dikirim dapat dipakai Google untuk memperbaiki produknya. Jangan memindai dokumen rahasia.</li>
     </ul>
   </section>
 
   <h2>1. Tentang aplikasi</h2>
-  <p>Agenda Prima adalah aplikasi untuk mengatur agenda Anda sendiri atau agenda orang yang Anda dampingi: undangan, jadwal, pengingat, buku tamu, dan cetak. Aplikasi tidak ditujukan untuk pengguna di bawah 18 tahun.</p>
+  <p>Agenda Prima adalah aplikasi untuk mengatur agenda Anda sendiri atau agenda orang yang Anda dampingi: undangan, jadwal, pengingat, buku tamu, dan cetak. Aplikasi tidak ditujukan untuk pengguna di bawah 18 tahun. Aturan pemakaian ada di <a href="syarat.html">Syarat Penggunaan</a>.</p>
 
   <h2>2. Data yang tersimpan di HP Anda</h2>
-  <p>Agenda (judul, tanggal, waktu, tempat, asal undangan, catatan), daftar tamu atau delegasi, pengaturan (tema, sebutan Anda di agenda, persetujuan pemberitahuan AI), dan kunci API Gemini Anda (disimpan terenkripsi di penyimpanan aman Android). Data ini hanya ada di HP Anda. Pengembang tidak memiliki server dan tidak dapat melihat atau mengambil data ini.</p>
+  <p>Agenda (judul, tanggal, waktu, tempat, asal undangan, catatan), daftar tamu atau delegasi, pengaturan (tema, sebutan Anda di agenda, persetujuan pemberitahuan AI), dan kunci API Gemini Anda (disimpan terenkripsi di penyimpanan aman Android). Aplikasi juga menyimpan catatan galat teknis di HP untuk layar Diagnostik (jenis dan pesan galat, layar, versi aplikasi, informasi perangkat); catatan ini tidak dikirim ke mana pun. Data ini hanya ada di HP Anda. Pengembang tidak memiliki server dan tidak dapat melihat atau mengambil data ini.</p>
 
   <h2>3. Data yang dikirim keluar dari HP</h2>
   <p>Hanya ketika Anda sendiri menekan fitur Scan, Analisis, atau Rekam suara, dan setelah Anda menyetujui pemberitahuan di aplikasi, aplikasi mengirim foto, berkas PDF, rekaman suara, dan teks (yang dapat memuat nama orang, tempat, dan isi undangan) ke Google Gemini API memakai kunci API milik Anda sendiri. Pengembang tidak menerima salinannya.</p>
+  <p>Saat Anda mengetuk Uji &amp; Simpan di Pengaturan, aplikasi mengirim kunci Anda bersama satu permintaan uji berisi kalimat tetap ("Balas dengan satu kata: OK") ke Google untuk memastikan kunci berfungsi. Tidak ada data agenda atau tamu di dalamnya.</p>
+  <p>Tombol Tempel di kolom kunci membaca isi papan klip (salinan) HP Anda hanya saat Anda mengetuknya, untuk mengisi kolom kunci. Isinya diperiksa di HP; bila bukan bentuk kunci yang benar, ditolak. Isi papan klip tidak dikirim ke mana pun, dan baru berupa kunci yang tersimpan setelah Anda mengetuk Uji &amp; Simpan.</p>
   <p>Pengolahan di Google tunduk pada <a href="https://ai.google.dev/gemini-api/terms">ketentuan layanan Gemini API</a> dan <a href="https://policies.google.com/privacy">Kebijakan Privasi Google</a>.</p>
   <div class="note">Pada layanan gratis, Google dapat memakai isi tersebut untuk memperbaiki produknya, dan peninjau manusia dapat membacanya. Karena itu jangan memindai atau merekam dokumen atau informasi yang rahasia atau sensitif. Pada layanan berbayar, Google menyatakan tidak memakai isi tersebut untuk memperbaiki produknya (lihat ketentuan Google).</div>
   <p>Fitur lain di aplikasi tetap berjalan tanpa fitur ini.</p>
 
   <h2>4. Yang tidak kami lakukan</h2>
   <p>Tidak ada iklan, pelacak, analitik, akun, atau laporan kesalahan otomatis. Data tidak dijual atau dibagikan oleh pengembang.</p>
+  <p>Aplikasi memuat beberapa pustaka bawaan dari Google dan Expo (misalnya komponen Firebase dan Google Play) sebagai bagian dari kerangka aplikasi Android. Pustaka itu tidak diaktifkan: aplikasi tidak memiliki konfigurasi proyek Firebase, tidak mendaftarkan perangkat untuk pesan dorong dari server, dan tidak memakai layanan masuk (login).</p>
 
   <h2>5. Izin yang diminta</h2>
   <ul>
@@ -68,22 +71,25 @@
     <li><strong>Kalender:</strong> setelah Anda mengizinkan, setiap agenda yang disimpan ditulis ke kalender di HP Anda. Aplikasi memilih kalender Google atau Samsung milik Anda bila ada; bila tidak ada, memakai kalender lain di HP atau membuat kalender lokal. Bila kalender itu disinkronkan dengan akun Anda, sinkronisasinya dilakukan oleh Android dan akun Anda, bukan oleh Agenda Prima.</li>
     <li><strong>Notifikasi dan alarm tepat waktu:</strong> pengingat agenda.</li>
     <li><strong>Mulai ulang HP:</strong> memasang ulang pengingat setelah HP dinyalakan kembali.</li>
+    <li><strong>Internet:</strong> mengirim permintaan ke Google Gemini atas tindakan Anda (bagian 3) dan membuka tautan.</li>
+    <li><strong>Getar dan menjaga proses tetap aktif:</strong> untuk pengingat dan saat memproses.</li>
   </ul>
+  <p>Daftar izin di Google Play atau Pengaturan HP dapat memuat izin tambahan yang dibawa pustaka bawaan (misalnya lencana ikon pada peluncur HP tertentu, sidik jari atau biometrik, penerimaan pesan Google, dan layanan pemasang Google Play). Aplikasi tidak memakai sidik jari atau biometrik dan tidak menerima pesan dari server.</p>
   <p>Izin hanya dipakai untuk fungsi tersebut dan dapat dicabut kapan saja di Pengaturan HP.</p>
 
   <h2>6. Berbagi atas permintaan Anda</h2>
-  <p>Cetak PDF, Excel, Word, pesan WhatsApp, dan tautan peta dibuat atas tindakan Anda dan dikirim ke aplikasi yang Anda pilih. Setelah itu data berada di aplikasi tujuan dan tunduk pada kebijakannya.</p>
+  <p>Cetak PDF, Excel, Word, pesan WhatsApp, dan tautan peta dibuat atas tindakan Anda dan dikirim ke aplikasi yang Anda pilih. Cadangkan Data membuat satu file (agenda dan Buku Tamu Anda, tanpa kunci Gemini) yang Anda simpan atau bagikan lewat menu Android sesuai pilihan Anda; Pulihkan dari Cadangan hanya membaca file yang Anda pilih. Setelah dibagikan, data berada di aplikasi tujuan atau tempat penyimpanan itu dan tunduk pada kebijakannya.</p>
 
   <h2>7. Menghapus data</h2>
   <p>Hapus agenda di dalam aplikasi, atau buka Pengaturan HP &gt; Aplikasi &gt; Agenda Prima &gt; Penyimpanan &gt; Hapus data, atau copot aplikasi. Hapus kunci Gemini dengan tombol Hapus di Pengaturan aplikasi, lalu cabut kuncinya di Google AI Studio. Data yang sudah dikirim ke Google diatur lewat akun Google Anda dan kebijakan Google.</p>
 
   <h2>8. Hak Anda dan kontak</h2>
-  <p>Sesuai Undang-Undang Pelindungan Data Pribadi (UU No. 27 Tahun 2022), Anda berhak menanyakan data Anda. Karena pengembang tidak menyimpan data Anda, hampir seluruh data berada dalam kendali Anda sendiri. Pertanyaan dapat dikirim ke <a href="mailto:prajagautamainformatika@gmail.com">prajagautamainformatika@gmail.com</a>.</p>
+  <p>Sesuai Undang-Undang Pelindungan Data Pribadi (UU No. 27 Tahun 2022), Anda berhak menanyakan data Anda. Karena pengembang tidak menyimpan data Anda, hampir seluruh data berada dalam kendali Anda sendiri. Bila Anda memasukkan data pribadi orang lain (misalnya nama tamu), Anda bertanggung jawab memastikan Anda berhak memakainya. Pertanyaan dapat dikirim ke <a href="mailto:prajagautamainformatika@gmail.com">prajagautamainformatika@gmail.com</a>.</p>
 
   <h2>9. Perubahan kebijakan</h2>
   <p>Bila kebijakan ini berubah, halaman ini diperbarui dengan tanggal baru di bagian atas.</p>
 
-  <footer>Agenda Prima adalah aplikasi independen dan tidak berafiliasi dengan Google, WhatsApp, atau lembaga pemerintah mana pun.</footer>
+  <footer>Agenda Prima adalah aplikasi independen dan tidak berafiliasi dengan Google, WhatsApp, atau lembaga pemerintah mana pun. · <a href="syarat.html">Syarat Penggunaan</a></footer>
 </main>
 </body>
 </html>
